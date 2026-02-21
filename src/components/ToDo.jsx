@@ -43,6 +43,17 @@ const ToDo = () => {
     })
   }
 
+  const updateTodo = (id, newText) => {
+    setTodoList((prevTodos) => {
+      return prevTodos.map((todo) => {
+        if (todo.id === id) {
+          return { ...todo, text: newText };
+        }
+        return todo;
+      });
+    });
+  };
+
   useEffect(()=>{
     console.log(todoList);
   }, [todoList])
@@ -64,7 +75,7 @@ const ToDo = () => {
       {/* todo-list */}
       <div>
         {todoList.map((item, index)=>{
-          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} dateAdded={item.dateAdded} deleteTodo={deleteTodo} toggle={toggle}/>
+          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} dateAdded={item.dateAdded} deleteTodo={deleteTodo} toggle={toggle} updateTodo={updateTodo}/>
         })}
         
       </div>

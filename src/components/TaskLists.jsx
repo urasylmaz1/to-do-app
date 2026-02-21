@@ -5,7 +5,7 @@ const TaskLists = ({ todoList }) => {
   const completedTasksCount = todoList.filter(todo => todo.isComplete).length;
 
   return (
-    <div className='flex gap-4 mb-4 bg-gray-400 rounded-lg p-4'>
+    <div className='flex gap-4 mb-4 bg-gray-100 rounded-lg p-4'>
       {/* Current Tasks Count */}
       <div className='flex-1 text-center'>
         <h2 className='text-xl font-medium text-gray-700 mb-2'>Current Tasks</h2>

@@ -11,7 +11,7 @@ const TodoItems = ({text, id, isComplete, dateAdded, deleteTodo, toggle, updateT
   };
 
   const handleSave = () => {
-    if (newText.trim() !== "") {
+    if (newText.trim() !== "" && newText.trim().length <= 25) {
       updateTodo(id, newText.trim());
     }
     setIsModalOpen(false);
@@ -42,6 +42,7 @@ const TodoItems = ({text, id, isComplete, dateAdded, deleteTodo, toggle, updateT
               onChange={(e) => setNewText(e.target.value)}
               className='w-full p-2 border border-gray-300 rounded mb-4'
               placeholder='Enter new task text'
+              maxLength="25"
             />
             <div className='flex justify-end gap-2'>
               <button onClick={handleCancel} className='px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400'>

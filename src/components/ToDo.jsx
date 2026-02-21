@@ -13,7 +13,7 @@ const ToDo = () => {
 
     const inputText = inputRef.current.value.trim();
 
-    if(inputText === "") return null;
+    if(inputText === "" || inputText.length > 25) return null;
 
     const newTodo = {
       id: Date.now(),
@@ -61,15 +61,15 @@ const ToDo = () => {
   return (
     <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-137.5 rounded-xl'>
       {/* title */}
-      <div className='flex items-center mt-7 gap-2'>
+      <div className='flex items-center mt-7 mb-7 gap-2'>
         <FaList className='w-7 h-7' />
-        <h1 className='text-3xl font-semibold text-pink-500'>To-Do List</h1>
+        <h1 className=' text-3xl font-semibold text-pink-500'>Simple To-Do List</h1>
       </div>
       {/* task counts */}
       <TaskLists todoList={todoList} />
       {/* input-box */}
       <div className='flex items-center my-7 bg-gray-200 rounded-full'>
-        <input ref={inputRef} className='bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2 placeholder:text-slate-600' type="text" placeholder="Add a new task..."/>
+        <input ref={inputRef} className='bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2 placeholder:text-slate-600' type="text" placeholder="Add a new task..." maxLength="25"/>
         <button onClick={add} className='border-none rounded-full bg-blue-600 w-32 h-14 text-white text-lg font-medium cursor-pointer'>Add +</button>
       </div>
       {/* todo-list */}

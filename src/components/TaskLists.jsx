@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TaskLists = ({ todoList }) => {
-  const currentTasksCount = todoList.filter(todo => !todo.isComplete).length;
+  const currentTasksCount = todoList.length;
   const completedTasksCount = todoList.filter(todo => todo.isComplete).length;
 
   return (

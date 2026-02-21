@@ -24,7 +24,7 @@ A modern to-do list project for Software Persona Internship built with React and
 
 1. Clone the repository:
    ```
-   git clone https://to-do-app-ylmzurs.netlify.app/
+   git clone https://github.com/urasylmaz1/to-do-app
    ```
 2. Navigate to the project directory:
    ```

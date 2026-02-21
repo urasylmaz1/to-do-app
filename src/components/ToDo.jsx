@@ -19,6 +19,7 @@ const ToDo = () => {
       id: Date.now(),
       text: inputText,
       isComplete: false,
+      dateAdded: new Date().toLocaleDateString(),
     }
 
     setTodoList((prev)=> [...prev, newTodo]);
@@ -63,7 +64,7 @@ const ToDo = () => {
       {/* todo-list */}
       <div>
         {todoList.map((item, index)=>{
-          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo} toggle={toggle}/>
+          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} dateAdded={item.dateAdded} deleteTodo={deleteTodo} toggle={toggle}/>
         })}
         
       </div>

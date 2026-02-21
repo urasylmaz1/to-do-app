@@ -1,37 +1,72 @@
 # To-Do App
 
-A simple and elegant to-do list application built with React and Vite. This app allows you to manage your daily tasks efficiently with an intuitive interface.
+A modern to-do list application built with React and Vite, featuring CRUD operations, task persistence, and a clean UI with Tailwind CSS.
 
 ## Features
 
-- **Add Tasks**: Quickly add new tasks to your list.
-- **Mark as Complete**: Toggle tasks between complete and incomplete states with visual feedback (checkmark and strikethrough).
-- **Delete Tasks**: Remove tasks you no longer need.
-- **Responsive Design**: Clean, modern UI built with Tailwind CSS for a great user experience on any device.
+- **Add Tasks**: Create new tasks with a maximum of 50 characters.
+- **List Tasks**: View all tasks, separated into Current Tasks (total count) and Completed Tasks (completed count).
+- **Update Tasks**: Edit task text via a modal popup.
+- **Delete Tasks**: Remove tasks individually.
+- **Toggle Completion**: Mark tasks as complete or incomplete.
+- **Date Added**: Displays the date each task was created.
+- **Persistence**: Tasks are saved in localStorage and persist across page refreshes.
+- **Responsive Design**: Styled with Tailwind CSS for a modern look.
 
 ## Tech Stack
 
-- **React**: For building the user interface.
-- **Vite**: For fast development and building.
-- **Tailwind CSS**: For styling and responsive design.
-- **React Icons**: For icons (FaList, FaCheck, FaRegCircle, FaTrash).
+- **Frontend**: React (with Vite)
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
+- **Deployment**: Netlify
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone <repository-url>
+   ```
+   git clone <your-github-repo-url>
+   ```
+2. Navigate to the project directory:
+   ```
    cd to-do-app
    ```
-
-2. Install dependencies:
-   ```bash
+3. Install dependencies:
+   ```
    npm install
    ```
-
-3. Start the development server:
-   ```bash
+4. Start the development server:
+   ```
    npm run dev
    ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in the terminal).
+## Usage
+
+- Add a new task using the input field and "Add" button.
+- Click the checkbox to toggle task completion.
+- Click the edit icon to update task text in a modal.
+- Click the trash icon to delete a task.
+- Tasks persist automatically across page refreshes.
+
+## Project Structure
+
+- `src/components/`: Reusable components (ToDo, TodoItems, TaskLists)
+- `src/pages/`: Page-level components (App)
+- `src/interfaces/`: (For future TypeScript interfaces, if needed)
+
+## Deployment
+
+- **Live Demo**: [Netlify Link](https://your-netlify-url.netlify.app) (replace with actual URL)
+- **Repository**: [GitHub Link](https://github.com/your-username/your-repo) (replace with actual URL)
+
+## Screenshots
+
+![App Screenshot](screenshots/app-screenshot.png)  <!-- Add your screenshot here -->
+
+## Contributing
+
+This project follows the guidelines from the training program, implementing CRUD operations in a TODO app framework.
+
+## License
+
+MIT License

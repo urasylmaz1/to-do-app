@@ -1,6 +1,6 @@
 # To-Do App
 
-A modern to-do list application built with React and Vite, featuring CRUD operations, task persistence, and a clean UI with Tailwind CSS.
+A modern to-do list project for Software Persona Internship built with React and Vite, featuring CRUD operations, task persistence, and a clean UI with Tailwind CSS.
 
 ## Features
 
@@ -57,11 +57,12 @@ A modern to-do list application built with React and Vite, featuring CRUD operat
 ## Deployment
 
 - **Live Demo**: [Netlify Link](https://your-netlify-url.netlify.app) (replace with actual URL)
-- **Repository**: [GitHub Link](https://github.com/your-username/your-repo) (replace with actual URL)
+- **Repository**: [GitHub Link](https://github.com/urasylmaz1/to-do-app) 
 
 ## Screenshots
 
-![App Screenshot](screenshots/app-screenshot.png)  <!-- Add your screenshot here -->
+![App Screenshot](screenshots/todo-app-screenshot.png)
+![App Screenshot](screenshots/todo-app-screenshot-2.png)
 
 ## Contributing
 

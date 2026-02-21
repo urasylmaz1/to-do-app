@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaList } from 'react-icons/fa'
 import TodoItems from './TodoItems'
+import TaskLists from './TaskLists'
 
 const ToDo = () => {
 
@@ -52,6 +53,8 @@ const ToDo = () => {
         <FaList className='w-7 h-7' />
         <h1 className='text-3xl font-semibold text-pink-500'>To-Do List</h1>
       </div>
+      {/* task counts */}
+      <TaskLists todoList={todoList} />
       {/* input-box */}
       <div className='flex items-center my-7 bg-gray-200 rounded-full'>
         <input ref={inputRef} className='bg-transparent border-0 outline-none flex-1 h-14 pl-6 pr-2 placeholder:text-slate-600' type="text" placeholder="Add a new task..."/>

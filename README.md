@@ -18,7 +18,7 @@ A modern to-do list project for Software Persona Internship built with React and
 - **Frontend**: React (with Vite)
 - **Styling**: Tailwind CSS
 - **Icons**: React Icons
-- **Deployment**: Netlify
+- **Deployment**: Netlify [Netlify Link](https://to-do-app-ylmzurs.netlify.app/)
 
 ## Installation
 
@@ -56,7 +56,7 @@ A modern to-do list project for Software Persona Internship built with React and
 
 ## Deployment
 
-- **Live Demo**: [Netlify Link](https://your-netlify-url.netlify.app) (replace with actual URL)
+- **Live Demo**: [Netlify Link](https://to-do-app-ylmzurs.netlify.app/) 
 - **Repository**: [GitHub Link](https://github.com/urasylmaz1/to-do-app) 
 
 ## Screenshots
@@ -64,10 +64,3 @@ A modern to-do list project for Software Persona Internship built with React and
 ![App Screenshot](screenshots/todo-app-screenshot.png)
 ![App Screenshot](screenshots/todo-app-screenshot-2.png)
 
-## Contributing
-
-This project follows the guidelines from the training program, implementing CRUD operations in a TODO app framework.
-
-## License
-
-MIT License

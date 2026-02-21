@@ -5,7 +5,15 @@ import TaskLists from './TaskLists'
 
 const ToDo = () => {
 
-  const [todoList, setTodoList] = React.useState([]);
+  const [todoList, setTodoList] = React.useState(()=> {
+    try {
+      const savedTodos = localStorage.getItem('todoList');
+      return savedTodos ? JSON.parse(savedTodos) : [];
+    } catch (error) {
+      console.error('Local storage error:', error);
+      return [];
+    }
+  });
 
   const inputRef = useRef();
 
@@ -55,8 +63,12 @@ const ToDo = () => {
   };
 
   useEffect(()=>{
-    console.log(todoList);
-  }, [todoList])
+    try {
+      localStorage.setItem('todoList', JSON.stringify(todoList));
+    } catch (error) {
+      console.error('Error saving todos to localStorage:', error);
+    }
+  }, [todoList]);
 
   return (
     <div className='bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-137.5 rounded-xl'>
